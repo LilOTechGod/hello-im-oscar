@@ -1,18 +1,22 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import React from 'react';
-import Typewriter from 'typewriter-effect';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import React from "react";
+import Typewriter from "typewriter-effect";
+import  ImageOne  from "./components/ImageOne";
+import {Footer} from './components/Footer'
+import AboutMe from './components/AboutMe'
 
 function App() {
   return (
-    <div className="">
-      <Header />
-      <Hero />
-      <div className="App">
-       <Typewriter onInit={(typewriter) => {
-            typewriter
+      <>
+        <Header />
+        <Hero />
+        <div className="App">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
                 .pauseFor(2000)
                 .typeString("I'm a Full Stack Software Engineer")
                 .pauseFor(2000)
@@ -23,10 +27,13 @@ function App() {
                 .typeString("problem solver")
                 .pauseFor(2000)
                 .start();
-        }}
-    />
-    </div>
-    </div>
+            }}
+          />
+        </div>
+        <ImageOne />
+        <AboutMe />
+        <Footer />
+      </>
   );
 }
 
