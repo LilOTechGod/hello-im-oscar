@@ -7,6 +7,7 @@ import Typewriter from "typewriter-effect";
 import  ImageOne  from "./components/ImageOne";
 import {Footer} from './components/Footer'
 import AboutMe from './components/AboutMe'
+import TechStack from './components/TechStack'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         </div>
         <ImageOne />
         <AboutMe />
+        <TechStack />
         <Footer />
       </>
   );
