@@ -34,9 +34,9 @@ function TechStack() {
   const createCarouselItem = (startIndex) => {
     return (
       <Carousel.Item>
-        <div style={{display: 'flex', justifyContent: 'spaceAround'}}>
-          {images.slice(startIndex, startIndex + 4).map((image, index) => (
-            <img key={index} style={{width: '25%', height: '9rem', padding: '1.5rem'}} src={image} alt={`Image ${startIndex + index + 1}`} />
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+          {images.slice(startIndex, startIndex + 5).map((image, index) => (
+            <img key={index} style={{width: '16%', height: '9rem', padding: '1rem', objectFit: 'contain'}} src={image} alt={`Image ${startIndex + index + 1}`} />
           ))}
         </div>
       </Carousel.Item>
@@ -44,10 +44,10 @@ function TechStack() {
   }
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} className='my-5'>
       {/* Loop through the images array and create carousel items every four images */}
       {images.map((image, index) => {
-        if (index % 4 === 0) {
+        if (index % 5 === 0) {
           return createCarouselItem(index);
         }
       })}

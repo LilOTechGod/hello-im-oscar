@@ -2,24 +2,25 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import video from '../assets/video.webm';
 import './Hero.css';
+import Ratio from 'react-bootstrap/Ratio';
+import TypeWriter from './TypeWriter';
 
 export default function Hero() {
 
     return (
       <div>
         <Row>
-          <Col sm={6}className='video'>
-            <video width='100%' height='' controls className='video'>
-                <source src={video} type='video/webm'></source>
-            </video>
+          <Col className='video p-0'>
+            <div style={{ width: '100%', height: 'auto' }}>
+              <Ratio aspectRatio="16x9"> 
+                <iframe src={video} frameborder="0" allowfullscreen></iframe>
+              </Ratio>
+            </div>
           </Col>
-          <Col sm={6} className='bg-danger'>
-            sm=4
+          <Col className='typewriterComponent'>
+            <TypeWriter />  
           </Col>
         </Row>
-        <div className='container heroDivider'>
-
-        </div>
       </div>
     );
   }

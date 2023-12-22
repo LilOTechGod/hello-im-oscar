@@ -1,4 +1,6 @@
-
-video.video {
-    margin: 5px;
+.typewriterComponent {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 0;
 }

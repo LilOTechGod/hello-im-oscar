@@ -1,20 +1,52 @@
-import React from 'react'
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { useState } from "react";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
-export const Footer = () => {
+function Footer() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div class="card text-center">
-        <div class="card-header">
-            Let's Chat 👋
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Oscar Perez-Hernandez</h5>
-            <p class="card-text">After reviewing my resume, I hope you will agree that I am the type of competent and competitive candidate you are looking for. I look forward to elaborating on how my specific skills and abilities will benefit your organization. Please contact me!</p>
-        </div>
-        <div class="card-footer text-muted">
-        <a href="" class="">Experience/Education</a>
-            <br />
-            <a href="" class="">View Portolio In HTML&CSS or in JS</a>
-        </div>
-    </div>
-  )
+    <Card>
+      <Card.Header>Featured</Card.Header>
+      <Container>
+        <Row>
+          <Col sm={6}>
+            <Card.Title>OPH Resume</Card.Title>
+            <Card.Text>
+              After reviewing my resume, I hope you will agree that I am the
+              type of competent and competitive candidate you are looking for. I
+              look forward to elaborating on how my specific skills and
+              abilities will benefit your organization.
+            </Card.Text>
+            <Button variant="primary" onClick={handleShow}>
+              Contact me
+            </Button>
+
+            <Offcanvas show={show} onHide={handleClose}>
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                Some text as placeholder. In real life you can have the elements
+                you have chosen. Like, text, images, lists, etc.
+              </Offcanvas.Body>
+            </Offcanvas>
+          </Col>
+
+          <Col sm={6}>
+            <Card.Img variant="top" src="holder.js/100px180" />
+          </Col>
+        </Row>
+      </Container>
+    </Card>
+  );
 }
+
+export default Footer;

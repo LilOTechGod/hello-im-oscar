@@ -10,7 +10,7 @@ function Header() {
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Portolios</Nav.Link>
+            <Nav.Link href="#features">Portfolios</Nav.Link>
             <Nav.Link href="#pricing">Education/Experience</Nav.Link>
           </Nav>
         </Container>
