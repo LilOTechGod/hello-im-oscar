@@ -4,16 +4,17 @@
   font-weight: 800;
   font-size: 50px;
   width: 100%;
+  padding: 30px;
+  color: #2B1400;
 }
-
 .imgOne {
   position: relative;
   height: 40rem;
   margin: 5rem auto;
-
 }
 .carousel-indicators {
   display: none !important;
 }
-
-
+#root {
+  background-color: #C0A080;
+}

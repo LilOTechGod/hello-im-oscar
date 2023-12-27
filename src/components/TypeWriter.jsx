@@ -10,10 +10,10 @@ const TypeWriter = () => {
                         .pauseFor(2000)
                         .typeString("I'm a Full Stack Software Engineer")
                         .pauseFor(2000)
-                        .deleteChars(17)
-                        .typeString("Web Developer")
+                        .deleteChars(28)
+                        .typeString("Tech Support")
                         .pauseFor(2000)
-                        .deleteChars(24)
+                        .deleteChars(12)
                         .typeString("Problem Solver")
                         .pauseFor(2000)
                         .start();

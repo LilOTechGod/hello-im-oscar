@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import './Footer.css'
 
 function Footer() {
   const [show, setShow] = useState(false);
@@ -13,7 +14,7 @@ function Footer() {
   const handleShow = () => setShow(true);
 
   return (
-    <Card>
+    <Card className="footerColor">
       <Card.Header>Featured</Card.Header>
       <Container>
         <Row>

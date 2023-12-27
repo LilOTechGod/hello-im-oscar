@@ -1,0 +1,16 @@
+.headerColor {
+    background-color: #4B3621;
+  }
+ .brandColor {
+  color: #fffdd0;
+  font-size: 25px;
+ }
+ .brandColor:hover {
+  color: #9F816D;
+ }
+ .linkColor {
+  color: #fffdd0;
+ }
+ .linkColor:hover {
+  color: #9F816D;
+ }

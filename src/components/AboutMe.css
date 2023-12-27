@@ -1,0 +1,17 @@
+.aboutMeHeader {
+    border-bottom: 5px solid #FFFDD0;
+    color: #2B1400;
+    width: 7%;
+    font-weight: 700;
+    line-height: 2em;
+}
+.headShot {
+    height: 300px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.fontColor {
+    color: #2B1400;
+    font-size: 18px;
+}
