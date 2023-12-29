@@ -2,8 +2,18 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import './AboutMe.css'
 import headShot from '../assets/Professional-Headshot.jpg';
+import AOS from 'aos';
+import React, {useEffect} from 'react'
+import 'aos/dist/aos.css';
 
 function AboutMe() {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 2000, // You can also add other settings. This one controls animation duration.
+        });
+      }, []);
+
   return (
     <Container>
       <Row>

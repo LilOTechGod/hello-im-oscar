@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Resume.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { Button } from "react-bootstrap";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Resume = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // You can also add other settings. This one controls animation duration.
+    });
+  }, []);
+
   return (
     <section id="resume" class="resume pb-5">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -18,6 +26,7 @@ export const Resume = () => {
       <Container>
         <div class="section-title">
           <h2 className="resumeHeader">Resume</h2>
+          <p className="resumeText">Below you will see a bit of my past experience along with my achievements. If you want to see my complete resume, click on the see more button and you will be taken to my full resume.</p>
         </div>
 
         <Row>

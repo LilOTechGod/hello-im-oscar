@@ -9,6 +9,7 @@ import AboutMe from './components/AboutMe'
 import TechStack from './components/TechStack'
 import { Resume } from "./components/Resume";
 import { Portfolio } from "./components/Portfolio";
+import  Testimonials from "./components/Testimonials";
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
         <ImageOne />
         <AboutMe />
         <Resume />
-        <Portfolio />
         <TechStack />
+        <Portfolio />
+        <Testimonials />
         <Footer />
       </>
   );

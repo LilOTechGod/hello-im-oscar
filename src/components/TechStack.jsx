@@ -19,6 +19,8 @@ import WP from '../assets/WP.png'
 import HASURA  from '../assets/Hasura.jpg'
 import ADS from '../assets/Azure-Logo.jpg'
 import CGPT from '../assets/CGPT.jpg'
+import './TechStack.css'
+
 
 function TechStack() {
   const [index, setIndex] = useState(0);
@@ -44,7 +46,7 @@ function TechStack() {
   }
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} className='my-5'>
+    <Carousel activeIndex={index} onSelect={handleSelect} className='pb-5 techStack'>
       {/* Loop through the images array and create carousel items every four images */}
       {images.map((image, index) => {
         if (index % 5 === 0) {

@@ -1,0 +1,34 @@
+.portfolioHeader {
+    border-bottom: 5px solid #FFFDD0;
+    color: #2B1400;
+    width: 7%;
+    font-weight: 700;
+    line-height: 2em;
+}
+.portfolioBtn {
+    background-color: #FFFDD0;
+    color: #2B1400;
+    border: 1px solid #2B1400;
+}
+.portfolioBtn:hover {
+    background-color: #9F816D;
+    color: #FFFDD0;
+    border: 1px solid #FFFDD0;
+}
+.portfolioBtn.disabled {
+    background-color: #FFFDD0;
+    color: #2B1400;
+    border: 1px solid #2B1400;
+}
+.portfolio-container {
+    display: flex;
+    align-items: stretch;
+}
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.portfolioTitle {
+    color: #2B1400;;
+}

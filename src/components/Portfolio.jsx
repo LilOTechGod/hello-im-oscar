@@ -1,121 +1,61 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Bookkeeping from '../assets/Ez_bookkeeping.mp4';
+import Flashbot from '../assets/Flashbot.webm';
+import './Portfolio.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Button } from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Card } from 'react-bootstrap';
+
 
 export const Portfolio = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 2000, // You can also add other settings. This one controls animation duration.
+        });
+      }, []);
+
   return (
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
+    <section id="portfolio" className="portfolio section-bg mb-4">
+      <Container>
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div className="section-title my-5">
+          <h2 className='portfolioHeader'>Portfolio</h2>
+          <p className='portfolioTitle'>Here you can see my most recent projects I've completed. Feel free to try the demo or visit the github repository associated to that project.</p>
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
+        <Row className="row portfolio-container h-100" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <Col className="h-100 projectCard">
+            <div className="portfolio-wrap mb-3 h-100">
+                <video src={Bookkeeping} className="img-fluid video rounded-top" alt="" controls loop />
+                <div className="portfolio-links">
+                    <Card.Title>Ez Bookkeeping</Card.Title>
+                    <Card.Text>A bookkeeping service for small organizations. Keeping track in an organized fashion of all your daily financial investments for your business.</Card.Text>
+                    <Button href="https://github.com/LilOTechGod/Ez-Bookkeeping" className="w-50 portfolioBtn rounded-0"><i className="bx bx-link"></i>View GitHub</Button>
+                    <Button href="https://ez-bookkeeping-57eaced69b66.herokuapp.com/" className='w-50 portfolioBtn rounded-0'><i className="bx bx-world"></i>Go to Site</Button>
+                </div>
+            </div>
+        </Col>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
+          <Col className='h-100 projectCard'>
+            <div className="portfolio-wrap mb-3 h-100">
+            <video src={Flashbot} className="img-fluid video rounded-top" alt="" controls loop />
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <Card.Title>Flash Bot</Card.Title>
+                <Card.Text>Never miss out on your favorite product again! Flash bot is an e-commerce store for purchasing a self checkout bot.</Card.Text>
+                <Button href="https://github.com/LilOTechGod/Flash-Bot" className="w-50 portfolioBtn rounded-0"><i className="bx bx-link"></i>View GitHub</Button>
+                <Button href="" className='w-50 portfolioBtn rounded-0 disabled'><i className="bx bx-world"></i>Go to Site</Button>
               </div>
             </div>
-          </div>
+          </Col>
+        </Row>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+      </Container>
     </section>
   )
 }

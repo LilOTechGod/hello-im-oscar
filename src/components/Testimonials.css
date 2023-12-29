@@ -1,0 +1,18 @@
+.testimonialCarousel {
+    height: 500px;
+    background-color: #9F816D;
+}
+.testimonialImg {
+    width: 125px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.testimonialPara {
+    width: 1100px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    display:none;
+}
