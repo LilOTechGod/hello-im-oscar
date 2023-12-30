@@ -20,7 +20,7 @@ export const Portfolio = () => {
       }, []);
 
   return (
-    <section id="portfolio" className="portfolio section-bg mb-4">
+    <section id="portfolio" className="portfolio section-bg">
       <Container>
 
         <div className="section-title my-5">
