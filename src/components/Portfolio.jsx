@@ -34,7 +34,7 @@ export const Portfolio = () => {
             <div className="portfolio-wrap mb-3 h-100">
                 <video src={Bookkeeping} className="img-fluid video rounded-top" alt="" controls loop />
                 <div className="portfolio-links">
-                    <Card.Title>Ez Bookkeeping</Card.Title>
+                    <Card.Title><strong>Ez Bookkeeping</strong></Card.Title>
                     <Card.Text>A bookkeeping service for small organizations. Keeping track in an organized fashion of all your daily financial investments for your business.</Card.Text>
                     <Button href="https://github.com/LilOTechGod/Ez-Bookkeeping" className="w-50 portfolioBtn rounded-0"><i className="bx bx-link"></i>View GitHub</Button>
                     <Button href="https://ez-bookkeeping-57eaced69b66.herokuapp.com/" className='w-50 portfolioBtn rounded-0'><i className="bx bx-world"></i>Go to Site</Button>
@@ -45,8 +45,8 @@ export const Portfolio = () => {
           <Col className='h-100 projectCard'>
             <div className="portfolio-wrap mb-3 h-100">
             <video src={Flashbot} className="img-fluid video rounded-top" alt="" controls loop />
-              <div class="portfolio-links">
-                <Card.Title>Flash Bot</Card.Title>
+              <div className="portfolio-links">
+                <Card.Title><strong>Flash Bot</strong></Card.Title>
                 <Card.Text>Never miss out on your favorite product again! Flash bot is an e-commerce store for purchasing a self checkout bot.</Card.Text>
                 <Button href="https://github.com/LilOTechGod/Flash-Bot" className="w-50 portfolioBtn rounded-0"><i className="bx bx-link"></i>View GitHub</Button>
                 <Button href="" className='w-50 portfolioBtn rounded-0 disabled'><i className="bx bx-world"></i>Go to Site</Button>

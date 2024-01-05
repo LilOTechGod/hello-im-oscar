@@ -15,7 +15,7 @@ export const Resume = () => {
   }, []);
 
   return (
-    <section id="resume" class="resume pb-5">
+    <section className="resume pb-5">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#C0A080"
@@ -23,16 +23,16 @@ export const Resume = () => {
           d="M0,128L60,117.3C120,107,240,85,360,90.7C480,96,600,128,720,165.3C840,203,960,245,1080,261.3C1200,277,1320,267,1380,261.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
       </svg>
-      <Container>
-        <div class="section-title">
+      <Container id="resume">
+        <div className="section-title">
           <h2 className="resumeHeader">Resume</h2>
           <p className="resumeText">Below you will see a bit of my past experience along with my achievements. If you want to see my complete resume, click on the see more button and you will be taken to my full resume.</p>
         </div>
 
         <Row>
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
+          <div className="col-lg-6" data-aos="fade-up">
+            <h3 className="resume-title">Summary</h3>
+            <div className="resume-item pb-0">
               <h5>Oscar Perez-Hernandez</h5>
               <p>
                 <em>
@@ -48,8 +48,8 @@ export const Resume = () => {
               </ul>
             </div>
 
-            <h3 class="resume-title">Education and Training</h3>
-            <div class="resume-item">
+            <h3 className="resume-title">Education and Training</h3>
+            <div className="resume-item">
               <h5>Software Engineering Fellowship</h5>
               <h5 className="timeFrame">2023 - 2023</h5>
               <p>
@@ -62,7 +62,7 @@ export const Resume = () => {
                 to be successful in the tech industry.
               </p>
             </div>
-            <div class="resume-item">
+            <div className="resume-item">
               <h5>Full Stack Web Development Bootcamp</h5>
               <h5 className="timeFrame">2022 - 2022</h5>
               <p>
@@ -75,14 +75,14 @@ export const Resume = () => {
                 extensions and industry tools along with best practices.
               </p>
             </div>
-                <div class="d-flex justify-content-center">
+                <div className="d-flex justify-content-center">
                     <Button href="#" className="mt-5 w-25 btn-color">See More</Button>
                 </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
+          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 className="resume-title">Professional Experience</h3>
+            <div className="resume-item">
               <h5>Web Developer</h5>
               <h5 className="timeFramePresent">2023 - Present</h5>
               <p>
@@ -125,7 +125,7 @@ export const Resume = () => {
                 </li>
               </ul>
             </div>
-            <div class="resume-item">
+            <div className="resume-item">
               <h5>Perficient Student Engineer fellowship </h5>
               <h5 className="timeFrame">2023 - 2023</h5>
               <p>

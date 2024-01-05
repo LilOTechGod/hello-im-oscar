@@ -18,3 +18,31 @@
 #root {
   background-color: #C0A080;
 }
+.ScrollUpButton__Container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.ScrollUpButton__Toggled {
+  opacity: 1 !important;
+}
+
+.ScrollUpButton__Container i {
+  font-size: 24px;
+}
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 17px;
+  z-index: 1000; /* This will ensure the button is above other elements */
+  background-color: transparent;
+  border: none;
+}
+.scrollUpBtn {
+  font-size: 40px;
+  color: whitesmoke;
+}

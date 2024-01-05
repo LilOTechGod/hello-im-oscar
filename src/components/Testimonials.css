@@ -12,11 +12,7 @@
 .testimonialPara {
     width: 1100px;
 }
-.carousel-control-prev,
-.carousel-control-next {
-    display:none;
-}
-.carousel-inner {
+.insideCarousel {
     height: 375px;
 }
 svg {

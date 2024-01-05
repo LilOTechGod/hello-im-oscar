@@ -15,7 +15,7 @@ function AboutMe() {
       }, []);
 
   return (
-    <Container>
+    <Container id="about">
       <Row>
         <div className="section-title">
           <h2 className="aboutMeHeader">About</h2>

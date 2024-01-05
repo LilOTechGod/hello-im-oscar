@@ -12,5 +12,8 @@
   color: #fffdd0;
  }
  .linkColor:hover {
-  color: #9F816D;
+  color: #C0A080;
+  transform: scale(1.15);
+  display: inline-block;
  }
+ 

@@ -8,11 +8,13 @@ function Header() {
     <>
       <Navbar className='headerColor'>
         <Container>
-          <Navbar.Brand className='brandColor' href="#home">Hi There! Welcome to my portfolio</Navbar.Brand>
+          <Navbar.Brand className='brandColor' href="#home">Welcome To My Portfolio!</Navbar.Brand>
           <Nav className="">
+            <Nav.Link className='linkColor' href="#about">About</Nav.Link>
+            <Nav.Link className='linkColor' href="#contact">Contact</Nav.Link>
             <Nav.Link className='linkColor' href="#home">Home</Nav.Link>
-            <Nav.Link className='linkColor' href="#features">Portfolios</Nav.Link>
-            <Nav.Link className='linkColor' href="#pricing">Education/Experience</Nav.Link>
+            <Nav.Link className='linkColor' href="#">Profiles</Nav.Link>
+            <Nav.Link className='linkColor' href="#resume">Resume</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
