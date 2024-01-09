@@ -19,6 +19,11 @@ import WP from '../assets/WP.png'
 import HASURA  from '../assets/Hasura.jpg'
 import ADS from '../assets/Azure-Logo.jpg'
 import CGPT from '../assets/CGPT.jpg'
+import ADataStudio from '../assets/ADS.jpg';
+import DIS from '../assets/discord.icon.png';
+import Heroku from '../assets/heroku.webp';
+import Mat from '../assets/materialize.png';
+import Sele from '../assets/selenium.png'
 import './TechStack.css'
 
 
@@ -30,15 +35,15 @@ function TechStack() {
   };
 
   // Define an array of image sources
-  const images = [ADO, AWS, CSS, GB, GH, HTML, JS, JEST, MICRO, MONGO, NODE, POST, PM, REACT, VS, WP, HASURA, CGPT, ADS];
+  const images = [ADO, AWS, CSS, GB, GH, HTML, JS, JEST, MICRO, MONGO, NODE, POST, PM, REACT, VS, WP, HASURA, CGPT, ADS, ADataStudio, DIS, Heroku, Mat, Sele];
 
   // Define a function to create carousel items with four images each
   const createCarouselItem = (startIndex) => {
     return (
       <Carousel.Item>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-          {images.slice(startIndex, startIndex + 5).map((image, index) => (
-            <img key={index} style={{width: '16%', height: '9rem', padding: '1rem', objectFit: 'contain'}} src={image} alt={`Image ${startIndex + index + 1}`} />
+          {images.slice(startIndex, startIndex + 6).map((image, index) => (
+            <img key={index} style={{width: '13%', height: '9rem', padding: '1rem', objectFit: 'contain'}} src={image} alt={`Image ${startIndex + index + 1}`} />
           ))}
         </div>
       </Carousel.Item>
@@ -49,7 +54,7 @@ function TechStack() {
     <Carousel activeIndex={index} onSelect={handleSelect} className='pb-5 techStack'>
       {/* Loop through the images array and create carousel items every four images */}
       {images.map((image, index) => {
-        if (index % 5 === 0) {
+        if (index % 6 === 0) {
           return createCarouselItem(index);
         }
       })}

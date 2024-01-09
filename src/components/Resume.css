@@ -9,7 +9,7 @@
     line-height: 2em;
 }
 .resume-title {
-    font-weight: 600;
+    font-weight: 700;
     color: #4B3621;
 }
 .resume-item {
@@ -54,4 +54,10 @@
   }
   .resumeText {
     color: #2B1400;
+  }
+  .bulletPoints {
+    font-weight: 500;
+  }
+  .mainPoint {
+    font-size: 17px;
   }

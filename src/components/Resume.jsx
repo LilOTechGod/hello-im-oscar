@@ -1,13 +1,12 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Resume.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { Button } from "react-bootstrap";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Resume = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 2000, // You can also add other settings. This one controls animation duration.
@@ -26,11 +25,14 @@ export const Resume = () => {
       <Container id="resume">
         <div className="section-title">
           <h2 className="resumeHeader">Resume</h2>
-          <p className="resumeText">Below you will see a bit of my past experience along with my achievements. If you want to see my complete resume, click on the see more button and you will be taken to my full resume.</p>
+          <p className="resumeText">
+            Below you will see a bit of my past experience along with my
+            achievements.
+          </p>
         </div>
 
         <Row>
-          <div className="col-lg-6" data-aos="fade-up">
+          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Summary</h3>
             <div className="resume-item pb-0">
               <h5>Oscar Perez-Hernandez</h5>
@@ -41,7 +43,7 @@ export const Resume = () => {
                   from initial concept to final, polished deliverable.
                 </em>
               </p>
-              <ul>
+              <ul className="bulletPoints">
                 <li>Austin, TX</li>
                 <li>(512) 659-6322</li>
                 <li>perezoscar360@gmail.com</li>
@@ -55,7 +57,7 @@ export const Resume = () => {
               <p>
                 <em>Hackbright Academy, San Francisco, CA</em>
               </p>
-              <p>
+              <p className="bulletPoints">
                 An accelerated Perficient sponsored program where only qualified
                 candidates participated in a software engineering fellowship. In
                 return students were properly trained with industry ready skills
@@ -68,19 +70,14 @@ export const Resume = () => {
               <p>
                 <em>University of Texas at Austin, Austin TX</em>
               </p>
-              <p>
+              <p className="bulletPoints">
                 A beginner to expert level course that covered the fundamentals
                 of web development. The course covered HTML, CSS, JavaScript,
                 Node.js, React, and much more like frameworks, libraries,
                 extensions and industry tools along with best practices.
               </p>
             </div>
-                <div className="d-flex justify-content-center">
-                    <Button href="#" className="mt-5 w-25 btn-color">See More</Button>
-                </div>
-          </div>
 
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Professional Experience</h3>
             <div className="resume-item">
               <h5>Web Developer</h5>
@@ -88,79 +85,119 @@ export const Resume = () => {
               <p>
                 <em>House Trevethan A Technology Studio, Tucson, AZ</em>
               </p>
-              <ul>
+              <ul className="bulletPoints">
                 <li>
-                  Execute Development and Configuration Tasks: I take pride in
+                <em className="mainPoint">Execute Development and Configuration Tasks:</em> I take pride in
                   skillfully handling assigned development and configuration
                   tickets, leveraging essential programming languages such as
                   JavaScript, WordPress, and some PHP.
                 </li>
                 <li>
-                  Strategic Relationship Building and Project Consultation: In a
-                  regular work week, 15% of the time I’m fostering team
-                  relationships, ensuring alignment, and creating a robust
-                  feedback loop. Consistently consult with the team on ongoing
-                  projects and tickets, guiding them from concept to successful
-                  completion. Weekly client deliveries are a priority.{" "}
+                <em className="mainPoint">Strategic Relationship Building and Project Consultation:</em> In a
+                  regular work week, 10% of the time I’m fostering a
+                  relationship with my team, ensuring alignment, creating a
+                  robust feedback loop, consulting about ongoing projects and
+                  tickets to guide them from concept to completion.{" "}
                 </li>
                 <li>
-                  Client Engagement and Solution Exploration: I enjoy engaging
+                <em className="mainPoint">Client Engagement and Solution Exploration:</em> I enjoy engaging
                   with clients proactively, discussing the realm of
-                  possibilities within budgetary constraints, resource
-                  availability, and project deadlines. It's always exciting to
-                  explore solutions that meet their needs.
+                  possibilities within their budget, resource availability, and
+                  project deadlines. It's always exciting to explore solutions
+                  that meet their needs.
                 </li>
                 <li>
-                  Continuous Learning and Software Optimization: I regularly
-                  delve into documentation for new plugins and frameworks. I
-                  strive to familiarize myself with the software landscape to
-                  maximize its potential, contributing innovative solutions or
-                  alternative approaches to the team.
-                </li>
-                <li>
-                  Mentorship and Training: Drawing from my own journey as a
-                  developer, I utilize my technical expertise to train upcoming
-                  developers, fostering a culture of continuous learning and
-                  skill enhancement within the team.
+                <em className="mainPoint">Continuous Learning and Software Optimization:</em> I often dive
+                  into the nitty-gritty of documentation. This helps me
+                  understand the ins and outs of the tools I'm using, allowing
+                  me to apply the most effective logic to my work. It's all
+                  about finding the best approach to get the job done right."
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div className="resume-item">
               <h5>Perficient Student Engineer fellowship </h5>
               <h5 className="timeFrame">2023 - 2023</h5>
               <p>
                 <em>Hackbright Academy, San Francisco, CA</em>
               </p>
-              <ul>
+              <ul className="bulletPoints">
                 <li>
-                  Comprehensive Fullstack Software Engineering Program:
-                  Successfully completed an accelerated fullstack software
+                <em className="mainPoint">Comprehensive Fullstack Software Engineering Program:</em> Successfully completed an accelerated fullstack software
                   engineering program sponsored by Perficient. This intensive
                   training not only equipped me with technical skills but also
                   instilled industry best practices, ensuring that I approach
                   development with a professional mindset.
                 </li>
                 <li>
-                  Comprehensive Skill Development: Acquired proficiency in
+                <em className="mainPoint">Comprehensive Skill Development:</em> Acquired proficiency in
                   fundamental areas such as data structures, algorithms,
                   testing, front-end, back-end, and database programming.
                   Leveraged technologies including JavaScript, HTML, Bootstrap,
                   and ReactJS.
                 </li>
                 <li>
-                  Effective Collaboration and Communication: Collaborated on
-                  pair-programming assignments with cohort colleagues, honing
-                  daily communication skills. This experience prepared me to
-                  effectively consult with clients.
+                  <em className="mainPoint">
+                    Effective Collaboration and Communication:
+                  </em>{" "}
+                  Collaborated on pair-programming assignments with cohort
+                  colleagues, honing daily communication skills. This experience
+                  prepared me to effectively consult with clients.
                 </li>
                 <li>
-                  Holistic Skill Development and Collaborative Projects:
+                  <em className="mainPoint">
+                    Holistic Skill Development and Collaborative Projects:
+                  </em>{" "}
                   Effective Communication: Collaborated on pair-programming
                   assignments with cohort colleagues, honing daily communication
                   skills essential for client consultations. Team and Capstone
                   Projects: Engaged in collaborative team projects and capstone
                   initiatives, applying theoretical knowledge to real-world
                   scenarios.
+                </li>
+              </ul>
+            </div>
+
+            <div className="resume-item">
+              <h5>Residency Intern(web developer)</h5>
+              <h5 className="timeFrame">2023 - 2023</h5>
+              <p>
+                <em>House Trevethan A Technology Studio, Tucson, AZ</em>
+              </p>
+              <ul className="bulletPoints">
+                <li>
+                  <em className="mainPoint">Mastered Internal Systems:</em> I
+                  eagerly dove into learning about our company’s internal
+                  systems, ensuring a seamless collaboration with my team. My
+                  understanding of these systems allowed me to contribute
+                  effectively to our projects.
+                </li>
+                <li>
+                  <em className="mainPoint">Hands-On Learning and Practice:</em>{" "}
+                  Beyond regular work hours, I set up a local sandbox
+                  environment. Here, I immersed myself in learning the software
+                  tools we utilized. I even dedicated time to personal projects,
+                  honing my skills and accelerating my familiarity with the
+                  tools.
+                </li>
+                <li>
+                  <em className="mainPoint">
+                    Dedication, Motivation, and Persistence:
+                  </em>{" "}
+                  These qualities were my driving force. I consistently
+                  demonstrated unwavering dedication, staying motivated even
+                  during challenging tasks. My persistence paid off in achieving
+                  project milestones.
+                </li>
+                <li>
+                  <em className="mainPoint">Shadowing and Inquisitiveness:</em>{" "}
+                  I actively shadowed experienced developers, observing their
+                  workflows and imbibing company best practices. My curiosity
+                  led me to ask insightful questions, further enriching my
+                  learning experience.
                 </li>
               </ul>
             </div>

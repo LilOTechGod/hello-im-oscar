@@ -9,16 +9,16 @@ export default function Hero() {
 
     return (
       <div>
-        <Row className='w-100 m-0'>
+        <Row className='w-100 mb-5'>
+          <Col className='typewriterComponent '>
+            <TypeWriter />  
+          </Col>
           <Col className='video p-0'>
             <div style={{ width: '100%', height: 'auto' }}>
               <Ratio aspectRatio="16x9"> 
                 <iframe src={video} frameborder="0" allowFullScreen></iframe>
               </Ratio>
             </div>
-          </Col>
-          <Col className='typewriterComponent rounded-end-5'>
-            <TypeWriter />  
           </Col>
         </Row>
       </div>

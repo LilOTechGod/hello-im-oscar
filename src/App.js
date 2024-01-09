@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import React, {useState, useEffect} from "react";
-import  ImageOne  from "./components/ImageOne";
+import ParallaxLottie  from "./components/ParallaxLottie";
 import Footer from './components/Footer'
 import AboutMe from './components/AboutMe'
 import TechStack from './components/TechStack'
@@ -36,7 +36,7 @@ function App() {
       <>
         <Header />
         <Hero />
-        <ImageOne />
+        <ParallaxLottie />
         <AboutMe />
         <Resume />
         <TechStack />
