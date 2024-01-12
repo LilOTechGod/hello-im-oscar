@@ -42,3 +42,13 @@ svg {
     font-size: 23px;
     font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+    .testimonialPara {
+        width: 100%;
+        font-size: 14px;
+    }
+    .insideCarousel {
+        height: auto;
+    }
+}

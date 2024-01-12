@@ -12,6 +12,11 @@
     color: #2B1400;
     border: 1px solid #2B1400;
 }
+.footerBtn:active {
+    background-color: #FFFDD0 !important;
+    color: #2B1400 !important;
+    border: 1px solid #2B1400;
+}
 .footerBtn:hover {
     background-color: #9F816D;
     color: #FFFDD0;
@@ -72,4 +77,9 @@
 .offCanvasSocialMediaIcon {
     font-size: 47px;
     color: #9F816D;
+}
+@media screen and (max-width: 768px) {
+    .footerSection {
+        margin-bottom: 2rem;
+    }
 }

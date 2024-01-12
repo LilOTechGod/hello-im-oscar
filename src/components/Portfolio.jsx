@@ -28,9 +28,9 @@ export const Portfolio = () => {
           <p className='portfolioTitle'>Here you can see my most recent projects I've completed. Feel free to try the demo or visit the github repository associated to that project.</p>
         </div>
 
-        <Row className="row portfolio-container h-100" data-aos="fade-up" data-aos-delay="100">
+        <Row className="portfolio-container h-100 flex-column-reverse flex-md-row" data-aos="fade-up" data-aos-delay="100">
 
-        <Col className="h-100 projectCard">
+        <Col className="h-100 projectCard order-2 order-md-1">
             <div className="portfolio-wrap mb-3 h-100">
                 <video src={Bookkeeping} className="img-fluid video rounded-top" alt="" controls loop />
                 <div className="portfolio-links">
@@ -42,7 +42,7 @@ export const Portfolio = () => {
             </div>
         </Col>
 
-          <Col className='h-100 projectCard'>
+          <Col className='h-100 projectCard order-1 order-md-2'>
             <div className="portfolio-wrap mb-3 h-100">
             <video src={Flashbot} className="img-fluid video rounded-top" alt="" controls loop />
               <div className="portfolio-links">

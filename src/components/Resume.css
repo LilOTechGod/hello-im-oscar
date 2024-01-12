@@ -61,3 +61,13 @@
   .mainPoint {
     font-size: 17px;
   }
+  .resumeBtn {
+    background-color: #FFFDD0;
+    color: #2B1400;
+    border: 1px solid #2B1400;
+}
+.resumeBtn:hover {
+    background-color: #9F816D;
+    color: #FFFDD0;
+    border: 1px solid #FFFDD0;
+}

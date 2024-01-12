@@ -23,4 +23,34 @@
  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #C0A080 !important;
   font-size: 16px;
+} 
+.navbar-toggler-icon {
+  background-color: #fffdd0
+}
+.navbar-toggler {
+  background-color: #fffdd0;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 #9F816D;
+}
+
+
+@media screen and (max-width: 767px) {
+  .brandColor {
+    color: #fffdd0;
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 819px) {
+  .brandColor {
+    color: #fffdd0;
+    font-size: 25px;
+  }
+  .linkColor {
+    color: #fffdd0;
+    font-size: 18px;
+  }
+
 }

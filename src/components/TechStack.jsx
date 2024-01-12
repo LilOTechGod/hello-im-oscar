@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ADO from '../assets/ADEVO.jpg'
 import AWS from '../assets/aws-icon.png'
@@ -28,7 +28,24 @@ import './TechStack.css'
 
 
 function TechStack() {
+
   const [index, setIndex] = useState(0);
+  const [imagesPerSlide, setImagesPerSlide] = useState(6);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 576) { // Bootstrap's breakpoint for small screens
+        setImagesPerSlide(3);
+      } else {
+        setImagesPerSlide(6);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call the function initially to set the state based on the initial window size
+
+    return () => window.removeEventListener('resize', handleResize); // Clean up the event listener on unmount
+  }, []);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
@@ -42,8 +59,8 @@ function TechStack() {
     return (
       <Carousel.Item>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-          {images.slice(startIndex, startIndex + 6).map((image, index) => (
-            <img key={index} style={{width: '13%', height: '9rem', padding: '1rem', objectFit: 'contain'}} src={image} alt={`Image ${startIndex + index + 1}`} />
+          {images.slice(startIndex, startIndex + imagesPerSlide).map((image, index) => (
+            <img key={index} className='carouselImg' src={image} alt={`Image ${startIndex + index + 1}`} />
           ))}
         </div>
       </Carousel.Item>

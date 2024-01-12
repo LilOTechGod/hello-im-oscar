@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Lottie from 'lottie-react';
 import animationData from '../assets/developerLottie.json';
+import './Hero.css'
 
 const ParallaxLottie = () => {
     const ref = useRef();
@@ -44,7 +45,7 @@ const ParallaxLottie = () => {
     return (
         <div style={{ width: '100%', height: 450, position: 'relative', overflow: 'hidden', backgroundColor: '#9F816D' }}>
             <div ref={ref} style={{ width: '100%', height: '100%', position: 'absolute' }}>
-                <Lottie animationData={animationData} style={{ width: '100%', height: '600px', marginTop: '2rem' }} />
+                <Lottie animationData={animationData} className='animation'/>
             </div>
         </div>
     );

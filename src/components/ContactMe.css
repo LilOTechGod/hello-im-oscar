@@ -9,7 +9,7 @@
     border: 1px solid #2B1400;
     padding: 20px;
     color: #2B1400;
-    box-shadow: 0 0 10px #2B1400; /* Adjust as needed */
+    box-shadow: 0 0 10px #2B1400;
 }
 .contact-input {
     background-color: #FFFDD0;
@@ -42,4 +42,10 @@
     background-color: #9F816D;
     color: #FFFDD0;
     border: 1px solid #FFFDD0;
+}
+
+@media screen and (max-width: 768px) {
+    .border-padding {
+        margin-bottom: 3rem;
+    }
 }

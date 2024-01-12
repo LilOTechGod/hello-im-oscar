@@ -87,31 +87,40 @@ export const Resume = () => {
               </p>
               <ul className="bulletPoints">
                 <li>
-                <em className="mainPoint">Execute Development and Configuration Tasks:</em> I take pride in
-                  skillfully handling assigned development and configuration
-                  tickets, leveraging essential programming languages such as
-                  JavaScript, WordPress, and some PHP.
+                  <em className="mainPoint">
+                    Execute Development and Configuration Tasks:
+                  </em>{" "}
+                  I take pride in skillfully handling assigned development and
+                  configuration tickets, leveraging essential programming
+                  languages such as JavaScript, WordPress, and some PHP.
                 </li>
                 <li>
-                <em className="mainPoint">Strategic Relationship Building and Project Consultation:</em> In a
-                  regular work week, 10% of the time I’m fostering a
+                  <em className="mainPoint">
+                    Strategic Relationship Building and Project Consultation:
+                  </em>{" "}
+                  In a regular work week, 10% of the time I’m fostering a
                   relationship with my team, ensuring alignment, creating a
                   robust feedback loop, consulting about ongoing projects and
                   tickets to guide them from concept to completion.{" "}
                 </li>
                 <li>
-                <em className="mainPoint">Client Engagement and Solution Exploration:</em> I enjoy engaging
-                  with clients proactively, discussing the realm of
-                  possibilities within their budget, resource availability, and
-                  project deadlines. It's always exciting to explore solutions
-                  that meet their needs.
+                  <em className="mainPoint">
+                    Client Engagement and Solution Exploration:
+                  </em>{" "}
+                  I enjoy engaging with clients proactively, discussing the
+                  realm of possibilities within their budget, resource
+                  availability, and project deadlines. It's always exciting to
+                  explore solutions that meet their needs.
                 </li>
                 <li>
-                <em className="mainPoint">Continuous Learning and Software Optimization:</em> I often dive
-                  into the nitty-gritty of documentation. This helps me
-                  understand the ins and outs of the tools I'm using, allowing
-                  me to apply the most effective logic to my work. It's all
-                  about finding the best approach to get the job done right."
+                  <em className="mainPoint">
+                    Continuous Learning and Software Optimization:
+                  </em>{" "}
+                  I often dive into the nitty-gritty of documentation. This
+                  helps me understand the ins and outs of the tools I'm using,
+                  allowing me to apply the most effective logic to my work. It's
+                  all about finding the best approach to get the job done
+                  right."
                 </li>
               </ul>
             </div>
@@ -126,18 +135,23 @@ export const Resume = () => {
               </p>
               <ul className="bulletPoints">
                 <li>
-                <em className="mainPoint">Comprehensive Fullstack Software Engineering Program:</em> Successfully completed an accelerated fullstack software
+                  <em className="mainPoint">
+                    Comprehensive Fullstack Software Engineering Program:
+                  </em>{" "}
+                  Successfully completed an accelerated fullstack software
                   engineering program sponsored by Perficient. This intensive
                   training not only equipped me with technical skills but also
                   instilled industry best practices, ensuring that I approach
                   development with a professional mindset.
                 </li>
                 <li>
-                <em className="mainPoint">Comprehensive Skill Development:</em> Acquired proficiency in
-                  fundamental areas such as data structures, algorithms,
-                  testing, front-end, back-end, and database programming.
-                  Leveraged technologies including JavaScript, HTML, Bootstrap,
-                  and ReactJS.
+                  <em className="mainPoint">
+                    Comprehensive Skill Development:
+                  </em>{" "}
+                  Acquired proficiency in fundamental areas such as data
+                  structures, algorithms, testing, front-end, back-end, and
+                  database programming. Leveraged technologies including
+                  JavaScript, HTML, Bootstrap, and ReactJS.
                 </li>
                 <li>
                   <em className="mainPoint">
@@ -201,6 +215,13 @@ export const Resume = () => {
                 </li>
               </ul>
             </div>
+
+            <div className="d-flex justify-content-center mt-auto">
+              <Button className="btn resumeBtn mt-4" type="button" href="https://docs.google.com/document/d/1Y0N8zVRRgj5NH0cevLKD87zx0eLd11IxnZWQpdgDw-Q/edit?usp=sharing" target="_blank">
+                See Full Resume
+              </Button>
+            </div>
+
           </div>
         </Row>
       </Container>

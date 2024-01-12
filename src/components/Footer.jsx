@@ -18,8 +18,8 @@ function Footer() {
   return (
     <Card className="footerColor rounded-0 py-5">
       <Container>
-        <Row>
-          <Col sm={4}>
+        <Row className="flex-column-reverse flex-md-row">
+          <Col sm={4} className="order-1 order-md-1 firstCol">
             <Card.Title className="footerTitle"><strong>Oscar Perez~Hernandez</strong></Card.Title>
             <Card.Text className="footerText">
               After reviewing my resume, I hope you will agree that I am the
@@ -82,7 +82,7 @@ function Footer() {
             </Offcanvas>
           </Col>
 
-          <Col sm={4} className="footerColTwo">
+          <Col sm={4} className="footerColTwo order-2 order-md-2 footerSection">
             <Card.Img variant="top" src={headShot} style={{ width: '33%' }}/>
             <div className="d-flex flex-column align-items-center">
               <a href="https://www.linkedin.com/in/oscar-perez-hernandez/" target="_blank"><i className="bi bi-linkedin socialMediaIcon"></i></a>
@@ -90,7 +90,7 @@ function Footer() {
             </div>
           </Col>
 
-          <Col sm={4}>
+          <Col sm={4} className="order-3 order-md-3 footerSection">
             <div className="d-flex flex-row justify-content-center gap-5">
               <div className="d-flex flex-column align-items-center">
                 <a href="#about" className="footerLinkColor">About</a>
@@ -99,7 +99,7 @@ function Footer() {
               </div>
               <div className="d-flex flex-column align-items-center">
                 <a href="#portfolio" className="footerLinkColor">Portfolio</a>
-                <a href="#" className="footerLinkColor">Profiles</a>
+                {/* <a href="#" className="footerLinkColor">Profiles</a> */}
                 <a href="#resume" className="footerLinkColor">Resume</a>
                 <a href="#testimonials" className="footerLinkColor">Testimonials</a>
               </div>
