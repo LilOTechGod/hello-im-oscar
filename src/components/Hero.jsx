@@ -8,7 +8,7 @@ import TypeWriter from "./TypeWriter";
 export default function Hero() {
   return (
     <div>
-      <Row className="mb-5 flex-column-reverse flex-md-row">
+      <Row className="mb-5 flex-column-reverse flex-md-row w-100">
         <Col className="typewriterComponent order-2 order-md-1">
           <TypeWriter />
         </Col>
