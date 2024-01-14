@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/hello-im-oscar/static/css/main.b82a4152.css",
+    "main.js": "/hello-im-oscar/static/js/main.15765641.js",
+    "static/js/787.478db775.chunk.js": "/hello-im-oscar/static/js/787.478db775.chunk.js",
+    "static/media/portfolio_introduction.mp4": "/hello-im-oscar/static/media/portfolio_introduction.cfdffb3a8dcb5733f9b0.mp4",
+    "static/media/Flashbot.webm": "/hello-im-oscar/static/media/Flashbot.e5fc7ca3fd60374dfdf1.webm",
+    "static/media/Ez_bookkeeping.mp4": "/hello-im-oscar/static/media/Ez_bookkeeping.ca7c05aa8e32caba3518.mp4",
+    "static/media/Professional-Headshot.jpg": "/hello-im-oscar/static/media/Professional-Headshot.10165e26b75730a9626f.jpg",
+    "static/media/DJ.png": "/hello-im-oscar/static/media/DJ.afecba604a4ffcf0addd.png",
+    "static/media/WP.png": "/hello-im-oscar/static/media/WP.8be7749da6c714d49c9d.png",
+    "static/media/Katryna.png": "/hello-im-oscar/static/media/Katryna.e9add4337d8bd41c48a1.png",
+    "static/media/microsoft365.png": "/hello-im-oscar/static/media/microsoft365.05e12f2cb7b46852b60b.png",
+    "static/media/selenium.png": "/hello-im-oscar/static/media/selenium.a197a9f09119ad0b7e06.png",
+    "static/media/postman.jpg": "/hello-im-oscar/static/media/postman.c04fc899c09b6d194910.jpg",
+    "static/media/bootstrap-icons.woff?": "/hello-im-oscar/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/hello-im-oscar/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/vs.png": "/hello-im-oscar/static/media/vs.a61dc62c499ed3aeefdc.png",
+    "static/media/materialize.png": "/hello-im-oscar/static/media/materialize.78adcd6a0d3c103bd10d.png",
+    "static/media/ADEVO.jpg": "/hello-im-oscar/static/media/ADEVO.3d8e1127c3023128e9a0.jpg",
+    "static/media/Azure-Logo.jpg": "/hello-im-oscar/static/media/Azure-Logo.74d420bde40f4ecd7b92.jpg",
+    "static/media/GBB.jpg": "/hello-im-oscar/static/media/GBB.d4b837e11ae3e39e7408.jpg",
+    "static/media/Jest.jpg": "/hello-im-oscar/static/media/Jest.5d66cc0f7efc68687e48.jpg",
+    "static/media/ADS.jpg": "/hello-im-oscar/static/media/ADS.07f7306e9c25b7f2a3cc.jpg",
+    "static/media/CGPT.jpg": "/hello-im-oscar/static/media/CGPT.2fbc9babc67bca6fa06e.jpg",
+    "static/media/postgresql-icon.png": "/hello-im-oscar/static/media/postgresql-icon.8d16a94b547bc26b48fe.png",
+    "static/media/github.png": "/hello-im-oscar/static/media/github.06667c6fc6b35110e1cf.png",
+    "static/media/mongodb.gif": "/hello-im-oscar/static/media/mongodb.0a3605edb6250a6432d9.gif",
+    "static/media/react-js-icon.png": "/hello-im-oscar/static/media/react-js-icon.396536ced87da4ba25b4.png",
+    "static/media/discord.icon.png": "/hello-im-oscar/static/media/discord.icon.667df059ddf407979d68.png",
+    "static/media/heroku.webp": "/hello-im-oscar/static/media/heroku.0e20dd4bb40a66d2534e.webp",
+    "index.html": "/hello-im-oscar/index.html",
+    "main.b82a4152.css.map": "/hello-im-oscar/static/css/main.b82a4152.css.map",
+    "main.15765641.js.map": "/hello-im-oscar/static/js/main.15765641.js.map",
+    "787.478db775.chunk.js.map": "/hello-im-oscar/static/js/787.478db775.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b82a4152.css",
+    "static/js/main.15765641.js"
+  ]
+}
