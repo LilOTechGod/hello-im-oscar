@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hello-im-oscar/static/css/main.b82a4152.css",
-    "main.js": "/hello-im-oscar/static/js/main.15765641.js",
+    "main.js": "/hello-im-oscar/static/js/main.a382f985.js",
     "static/js/787.478db775.chunk.js": "/hello-im-oscar/static/js/787.478db775.chunk.js",
     "static/media/portfolio_introduction.mp4": "/hello-im-oscar/static/media/portfolio_introduction.cfdffb3a8dcb5733f9b0.mp4",
     "static/media/Flashbot.webm": "/hello-im-oscar/static/media/Flashbot.e5fc7ca3fd60374dfdf1.webm",
@@ -31,11 +31,11 @@
     "static/media/heroku.webp": "/hello-im-oscar/static/media/heroku.0e20dd4bb40a66d2534e.webp",
     "index.html": "/hello-im-oscar/index.html",
     "main.b82a4152.css.map": "/hello-im-oscar/static/css/main.b82a4152.css.map",
-    "main.15765641.js.map": "/hello-im-oscar/static/js/main.15765641.js.map",
+    "main.a382f985.js.map": "/hello-im-oscar/static/js/main.a382f985.js.map",
     "787.478db775.chunk.js.map": "/hello-im-oscar/static/js/787.478db775.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b82a4152.css",
-    "static/js/main.15765641.js"
+    "static/js/main.a382f985.js"
   ]
 }
